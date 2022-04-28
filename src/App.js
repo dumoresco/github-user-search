@@ -58,19 +58,21 @@ function App() {
           <Button onClick={handleSubmit}>Search</Button>
         </InputGroup>
         {users && (
-          <GithubUser
-            userImage={users.avatar_url}
-            name={users.name}
-            username={users.login}
-            bio={users.bio}
-            repos={users.public_repos}
-            followers={users.followers}
-            following={users.following}
-            city={users.location}
-            organization={users.company}
-            twitter={users.twitter_username}
-            site={users.blog}
-          />
+          <>
+            <GithubUser
+              userImage={users.avatar_url}
+              name={users.name}
+              username={users.login}
+              bio={users.bio}
+              repos={users.public_repos}
+              followers={users.followers}
+              following={users.following}
+              city={users.location}
+              organization={users.company}
+              twitter={users.twitter_username}
+              site={users.blog}
+            />
+          </>
         )}
       </Container>
     </>
