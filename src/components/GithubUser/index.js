@@ -55,8 +55,7 @@ function GithubUser({
       <UserList>
         <ul>
           <li>
-            <MdLocationOn className="icon" />{" "}
-            {!city ? <p>Não disponível</p> : city}
+            <MdLocationOn className="icon" /> {city}
           </li>
           <li>
             <CgWebsite className="icon" />{" "}
